@@ -1,22 +1,20 @@
 import React from 'react';
 
 import './App.css';
-import {Button, Container, Stack} from "react-bootstrap";
+import {Button, Container} from "react-bootstrap";
+import Header from "./view/components/Header";
+import Body from "./view/components/Body";
+import Footer from "./view/components/Footer";
 
 function App() {
-  return (
-        <Container>
-            <Stack direction="horizontal" gap={2}>
-                <Button as="a" variant="primary">
-                    Button as link
-                </Button>
-                <Button as="a" variant="success">
-                    Button as link
-                </Button>
-            </Stack>
+    return (
+        <Container id="page" className={"border"}>
+            <Header></Header>
+            <Body></Body>
+            <Footer></Footer>
         </Container>
 
-  );
+    );
 }
 
 export default App;
